@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>계양중학교 소개</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body id="top">
+<header>
+    <p class="small">학생과 학부모를 위한 학교 안내</p>
+    <h1>계양중학교 소개</h1>
+    <p>학교를 알아보고, 더 나은 학교생활을 위한 의견을 나누세요.</p>
+    <nav aria-label="페이지 메뉴">
+        <a href="#intro">학교 소개</a>
+        <a href="#feature">주요 기능</a>
+        <a href="#use">이용 방법</a>
+        <a href="#input">의견 작성</a>
+        <a href="#board">의견 게시판</a>
+    </nav>
+</header>
+<main>
+    <section id="intro">
+        <h2>학교 소개</h2>
+        <img id="school-image" src="image(4).png" alt="계양중학교 운동장과 학교 건물" width="500">
+        <p id="image-notice" class="notice" hidden>학교 사진이 준비되지 않았습니다. 아래 소개를 먼저 읽어 주세요.</p>
+        <p>계양중학교는 학생들이 다양한 교육 활동과 학교생활을 할 수 있는 학교입니다.</p>
+    </section>
+    <section id="feature">
+        <h2>주요 기능</h2>
+        <p>1. 계양중학교 소개 보기</p>
+        <p>2. 학교 이미지 보기</p>
+        <p>3. 학교생활 의견 등록하고 공감하기</p>
+    </section>
+    <section id="use">
+        <h2>이용 방법</h2>
+        <ol>
+            <li>상단 메뉴에서 학교 소개와 이미지를 확인합니다.</li>
+            <li>학교생활에 관한 의견을 입력하고 등록합니다.</li>
+            <li>의견 게시판에서 공감하는 의견의 공감 버튼을 누릅니다.</li>
+        </ol>
+    </section>
+    <section id="input">
+        <h2>의견 작성</h2>
+        <p>학교생활에서 바라는 점을 5~100자로 적어 주세요. 이름이나 연락처는 적지 마세요.</p>
+        <form id="opinion-form" novalidate>
+            <label for="opinion">학교생활에 관한 의견</label>
+            <textarea id="opinion" rows="3" aria-describedby="input-message" placeholder="예: 도서관에 새로운 책이 더 있으면 좋겠습니다."></textarea>
+            <button type="submit">게시판에 의견 등록</button>
+        </form>
+        <p id="input-message" role="status" aria-live="polite"></p>
+        <a href="#board">의견 게시판으로 이동</a>
+    </section>
+    <section id="board">
+        <h2>의견 게시판</h2>
+        <p class="notice">테스트용 게시판입니다. 모든 게시물은 저장되지 않으며 새로고침 시 초기화 됩니다~ ^^</p>
+        <p id="opinion-count"></p>
+        <ul id="opinion-list"></ul>
+        <p id="board-message" role="status" aria-live="polite"></p>
+        <a href="#input">의견 더 작성하기</a>
+        <button id="restart" type="button" class="secondary">게시물 초기화 하기</button>
+    </section>
+</main>
+<footer><a href="#top">맨 위로 이동</a></footer>
+</body>
+</html>

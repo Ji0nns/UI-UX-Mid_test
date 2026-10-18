@@ -1,0 +1,37 @@
+
+* { box-sizing: border-box; }
+body { margin: 0; background: #f3f5f7; color: #253343; font-family: Arial, sans-serif; line-height: 1.7; }
+header, main, footer { width: 90%; max-width: 800px; margin: auto; }
+header { padding: 32px 0 24px; }
+h1 { margin: 8px 0; font-size: 30px; }
+h2 { margin-top: 0; font-size: 22px; }
+.small { color: #42644d; font-weight: bold; }
+nav { display: flex; flex-wrap: wrap; gap: 12px; }
+a { color: #23553d; text-underline-offset: 4px; }
+section { background: white; padding: 24px; margin-bottom: 20px; border: 1px solid #dce3e8; border-radius: 10px; scroll-margin-top: 16px; }
+img { max-width: 100%; height: auto; border-radius: 6px; }
+label { display: block; font-weight: bold; margin-bottom: 6px; }
+textarea { display: block; width: 100%; padding: 12px; border: 1px solid #677583; border-radius: 5px; font: inherit; resize: vertical; }
+button { max-width: 100%; min-height: 44px; padding: 10px 16px; margin-top: 12px; border: 1px solid #285b41; border-radius: 5px; background: #285b41; color: white; font: inherit; cursor: pointer; }
+button:hover { background: #1b422e; }
+.secondary { background: white; color: #285b41; margin-left: 12px; }
+.secondary:hover { background: #edf4ef; }
+:focus-visible { outline: 3px solid #d48916; outline-offset: 3px; }
+.notice { padding: 12px; background: #f0f3f6; color: #4b5967; }
+
+.error { color: #b02121; font-weight: bold; }
+.success { color: #23553d; font-weight: bold; }
+.liked { background: #e8f1eb; color: #23553d; }
+.liked:hover { background: #d9e9df; }
+#opinion-list { list-style: none; padding: 0; }
+#opinion-list li { border-top: 1px solid #dce3e8; padding: 16px 0; overflow-wrap: anywhere; }
+#opinion-list p { margin: 0; white-space: pre-wrap; }
+footer { padding: 0 0 30px; }
+
+@media (max-width: 600px) {
+    h1 { font-size: 26px; }
+    section { padding: 18px; }
+    button { width: 100%; }
+    .secondary { margin-left: 0; }
+    nav { gap: 10px 16px; }
+}
